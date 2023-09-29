@@ -148,7 +148,7 @@ header p.subtext::before {
 
     .container {
 
-      max-width: 100%;
+      max-width: 90%;
       margin: 0 auto;
       padding: 20px;
       display: flex;
@@ -156,7 +156,7 @@ header p.subtext::before {
       /* Arrange children in a column */
       align-items: center;
       justify-content: center;
-      opacity: 0.88;
+      opacity: 0.84;
       background-color: #fff5cf;
 
     }
@@ -561,12 +561,18 @@ header p.subtext::before {
 
 
     }
+
+    #page-container {
+  display: none;
+}
+
   </style>
 
 </head>
-
+<div id="page-container">
 <body>
   <header>
+  
     <div class="container-header">
       <nav>
         <img src="https://drive.google.com/uc?id=1YceOs23FLop1Mh62SlmcL5nKBzAhLhK8" alt="MUIT Hackathon Logo"
@@ -787,7 +793,7 @@ header p.subtext::before {
       </ul>
     </div>
   </div>
-
+</div>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const problemStatements = document.querySelectorAll(".problem-statement");
@@ -820,6 +826,33 @@ header p.subtext::before {
 
     // Initial call to handleResize to set initial styles
     handleResize();
+
+ // Function to check if all images are loaded
+ function allImagesLoaded(images) {
+    for (let i = 0; i < images.length; i++) {
+      if (!images[i].complete) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  // Function to display the page when all images are loaded
+  function showPageWhenImagesLoaded() {
+    const images = document.querySelectorAll("img");
+    if (allImagesLoaded(images)) {
+      // All images are loaded, show the page
+      const pageContainer = document.getElementById("page-container");
+      pageContainer.style.display = "block";
+    } else {
+      // Wait and check again in 100 milliseconds
+      setTimeout(showPageWhenImagesLoaded, 100);
+    }
+  }
+
+  // Add an event listener to call the showPageWhenImagesLoaded function
+  window.addEventListener("load", showPageWhenImagesLoaded);
+
   </script>
 
 
