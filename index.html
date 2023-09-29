@@ -8,431 +8,410 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <style>
     body {
-      background-color: #181818;
-      color: #fff;
+      background-color: #fff; /* White background color */
+      color: #000; /* Black text color */
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
     }
-
+  
     header {
-      background-color: #000;
-      color: #fff;
+      background-color: #800000; /* Maroon background color */
+      color: #fff; /* White text color */
       padding: 20px 0;
       text-align: center;
     }
-
+  
     header h1 {
       margin: 0;
       font-size: 36px;
       font-weight: bold;
       letter-spacing: 3px;
     }
-
+  
     header p {
       font-size: 18px;
       margin-top: 10px;
     }
-
+  
     header p.subtext {
       font-size: 16px;
-      color: #aaa;
+      color: #f20404;
     }
-
+  
     header ul {
       list-style-type: none;
       padding: 0;
     }
-
+  
     header ul li {
       display: inline;
       margin-right: 20px;
     }
-
+  
     header ul li:last-child {
       margin-right: 0;
     }
-
+  
     header ul li a {
-      color: #fff;
+      color: #19f845;
       text-decoration: none;
+      background-color: rgb(183, 0, 219);
+      transition: background-color 0.3s ease;
+      
     }
-
+  
     header ul li a:hover {
       text-decoration: underline;
-    }
+      background-color: #36f85d;
+      color: rgb(183, 0, 219);
+      box-shadow: 0 0 30px #19f845;
 
+    }
+  
     .container {
       max-width: 960px;
       margin: 0 auto;
-      background-color: #181818;
+      background-color: #fff; /* White background color */
       padding: 20px;
     }
-
+  
     .content {
       text-align: center;
       margin-top: 50px;
     }
-
-
+  
     /* Header Styles */
-header {
-  background-color: #353435; /* Dark background color */
-  color: #fff; /* Text color */
-  padding: 10px 0;
-  text-align: center;
-  transition: background-color 0.3s ease; /* Smooth background color transition */
-}
-
-header:hover {
-  background-color: #222; /* Darker background color on hover */
-}
-
-.container {
-  display: flex;
-  flex-direction: column; /* Arrange children in a column */
-  align-items: center;
-  justify-content: center;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.logo {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-  border-radius: 50%; /* Make the logo circular */
-  transition: transform 0.3s ease; /* Add a subtle scaling effect on hover */
-}
-
-.logo:hover {
-  transform: scale(1.05); /* Slightly scale up the logo on hover */
-}
-
-.neon-text {
-  font-size: 36px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-shadow: 0 0 5px #d3f52d, 0 0 10px #d3f52d, 0 0 20px #d3f52d; /* Neon text effect */
-  animation: neon-animation 1.5s linear infinite alternate;
-}
-
-.header-info {
-  text-align: center;
-}
-
-/* Neon Glow Effect for Links */
-ul li a {
-  display: inline-block;
-  position: relative;
-  background-color: transparent; /* Transparent background */
-  color: #007BFF; /* Default text color */
-  padding: 10px 20px; /* Padding adjustments */
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px; /* Rounded corners */
-  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; /* Smooth transitions */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-}
-
-ul li a:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #d3f52d, #ff0000); /* Neon-style gradient */
-  border-radius: 30px; /* Match button's border-radius */
-  z-index: -1;
-  transition: opacity 0.3s ease;
-  opacity: 0; /* Initially hidden */
-}
-
-ul li a:hover:before {
-  opacity: 1; /* Show the neon glow on hover */
-}
-
-/* Styling for "About" Section Link */
-ul li a#about-link {
-  color: #ff0000; /* Neon text color */
-  text-shadow: 0 0 5px #d3f52d, 0 0 10px #d3f52d, 0 0 20px #d3f52d; /* Neon text effect */
-}
-
-ul li a#about-link:before {
-  background: linear-gradient(45deg, #d3f52d, #ff0000); /* Neon-style gradient for "About" link */
-}
-
-/* Highlighting for "About" Section */
-#about-section {
-  background-color: #4bf9ff; /* Highlight background color */
-  color: #480f58; /* Highlight text color */
-  padding: 6px; /* Highlight padding */
-  border-radius: 10px; /* Rounded corners for the highlight */
-  margin: 20px 0; /* Add margin to separate from other content */
-  transition: background-color 0.3s ease;
-      box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
-}
-
-/* Reset Link Styles for "About" Section */
-#about-section a {
-  color: #020202; /* Reset link color to match highlight text color */
-}
-
-#about-section a:hover {
-  text-decoration: underline; /* Add underline effect on hover */
-}
-
-
+    header {
+      background-color: #800000; /* Maroon background color */
+      color: #fff; /* White text color */
+      padding: 10px 0;
+      text-align: center;
+      transition: background-color 0.3s ease; /* Smooth background color transition */
+    }
+  
+    header:hover {
+      background-color: #600000; /* Darker maroon background color on hover */
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column; /* Arrange children in a column */
+      align-items: center;
+      justify-content: center;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffea9e;
+    }
+  
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+      border-radius: 50%; /* Make the logo circular */
+      transition: transform 0.3s ease; /* Add a subtle scaling effect on hover */
+    }
+  
+    .logo:hover {
+      transform: scale(1.05); /* Slightly scale up the logo on hover */
+    }
+  
+    .neon-text {
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700; /* Neon text effect */
+      animation: neon-animation 1.5s linear infinite alternate;
+    }
+  
+    .header-info {
+      text-align: center;
+    }
+  
+    /* Neon Glow Effect for Links */
+    ul li a {
+      display: inline-block;
+      position: relative;
+      background-color: transparent; /* Transparent background */
+      color: #FFD700; /* Yellow text color */
+      padding: 10px 20px; /* Padding adjustments */
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px; /* Rounded corners */
+      transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; /* Smooth transitions */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+  
+    ul li a:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #FFD700, #800000); /* Neon-style gradient */
+      border-radius: 30px; /* Match button's border-radius */
+      z-index: -1;
+      transition: opacity 0.3s ease;
+      opacity: 0; /* Initially hidden */
+    }
+  
+    ul li a:hover:before {
+      opacity: 1; /* Show the neon glow on hover */
+    }
+  
+    /* Styling for "About" Section Link */
+    ul li a#about-link {
+      color: #800000; /* Maroon text color */
+      text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700; /* Neon text effect */
+    }
+  
+    ul li a#about-link:before {
+      background: linear-gradient(45deg, #FFD700, #800000); /* Neon-style gradient for "About" link */
+    }
+  
+    /* Highlighting for "About" Section */
+    #about-section {
+      background-color: #FFD700; /* Yellow highlight background color */
+      color: #800000; /* Maroon highlight text color */
+      padding: 6px; /* Highlight padding */
+      border-radius: 10px; /* Rounded corners for the highlight */
+      margin: 20px 0; /* Add margin to separate from other content */
+      transition: background-color 0.3s ease;
+      box-shadow: 0 0 20px rgba(128, 0, 0, 0.5);
+    }
+  
+    /* Reset Link Styles for "About" Section */
+    #about-section a {
+      color: #000; /* Reset link color to match highlight text color */
+      box-shadow: 0 0 30px #ecff19
+    }
+  
+    #about-section a:hover {
+      text-decoration: underline; /* Add underline effect on hover */
+      box-shadow: 0 0 30px #ecff19
+    }
+  
     .button {
       display: inline-block;
-      background-color: #007BFF;
-      color: #fff;
+      background-color: #FFD700; /* Yellow background color */
+      color: #fff; /* White text color */
       padding: 10px 20px;
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
       transition: background-color 0.3s ease;
-      box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+      box-shadow: 0 0 20px rgba(255, 237, 35, 0.945);
     }
-
+  
     .button:hover {
-      background-color: #ffffff;
-      color: #007BFF;
-      box-shadow: 0 0 30px #007BFF;
-
+      background-color: #ffffff; /* Darker maroon background color on hover */
+      color: #800000; /* White text color */
+      box-shadow: 0 0 30px #800000;
     }
-
+  
     h2 {
       font-size: 24px;
       color: #fff;
     }
-
+  
     h3 {
       font-size: 20px;
       color: #fff;
     }
-
+  
     p {
       font-size: 16px;
-      color: #aaa;
+      color: #ffe0de;
       margin: 10px 0;
     }
-
+  
     ol,
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
     }
-
+  
     li {
       margin-bottom: 10px;
     }
-
-
+  
     .problem-statement {
       cursor: pointer;
       transition: background-color 0.3s ease;
-      border: 2px solid #00ffdd;
+      border: 2px solid #FFD700; /* Yellow border */
       border-radius: 5px;
       padding: 10px;
       margin-bottom: 20px;
     }
-
+  
     .problem-statement.expanded {
-      background-color: #333;
-    }
+  background-color: #800000; /* Updated background color (Maroon) */
+  color: #fff; /* Text color */
+  border: 2px solid #fff; /* White border */
+  border-radius: 5px;
+  padding: 15px; /* Increased padding for better readability */
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(128, 0, 0, 0.5); /* Maroon box shadow */
+}
 
+  
     .problem-description {
       display: none;
       margin-top: 10px;
       color: #fff;
     }
-
+  
     .problem-statement.active .problem-description {
       display: block;
     }
-
+  
     /* Neon styles */
     .neon-text {
-  font-size: 24px;
-  color: #ffffff; /* White text color */
-  text-shadow: 0 0 5px #007BFF, 0 0 10px #007BFF, 0 0 20px #007BFF; /* Blue neon glow */
-  animation: neon-animation 1.5s linear infinite alternate;
-}
-
-
-@keyframes neon-animation {
-  0% {
-    text-shadow: 0 0 2px #007BFF, 0 0 6px #007BFF, 0 0 10px #007BFF; /* Blue neon glow */
-  }
-
-  100% {
-    text-shadow: 0 0 10px #007BFF, 0 0 20px #007BFF, 0 0 30px #007BFF; /* Blue neon glow */
-  }
-}
-
-
+      font-size: 24px;
+      color: #a01e1e; /* White text color */
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff; /* Yellow neon glow */
+      animation: neon-animation 1.5s linear infinite alternate;
+    }
+  
+    @keyframes neon-animation {
+      0% {
+        text-shadow: 0 0 2px #ffffff, 0 0 6px #ffffff, 0 0 10px #ffffff; /* Yellow neon glow */
+      }
+  
+      100% {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; /* Yellow neon glow */
+      }
+    }
+  
     /* Arrow styles */
     .arrow {
       font-size: 36px;
-      color: #ffffff;
+      color: #2cff56; /* White text color */
       transform: rotate(0deg);
-
-      /* Rotate the arrow 90 degrees */
-      animation: neon-arrow-animation 1.5s linear infinite alternate;
+      text-shadow: 0 0 10px #2cff56;
+      
     }
-
+  
     @keyframes neon-arrow-animation {
       0% {
-        text-shadow: 0 0 10px #6a027c, 0 0 10px #6a027c, 0 0 20px #6a027c;
+        text-shadow: 0 0 10px #2cff56, 0 0 10px #2cff56, 0 0 20px #2cff56;
       }
-
+  
       100% {
-        text-shadow: 0 0 20px #6a027c, 0 0 20px #6a027c, 0 0 30px #6a027c;
+        text-shadow: 0 0 20px #2cff56, 0 0 20px #2cff56, 0 0 30px #2cff56;
       }
     }
-
+  
     /* Media Queries for Responsiveness */
     @media (max-width: 768px) {
       .container {
         padding: 10px;
       }
-
+  
       .button {
         font-size: 14px;
       }
-
+  
       .problem-statement {
         padding: 10px;
       }
-
-      .custom-link-button {
-        display: inline-block;
-      background-color: #ff0000;
-      color: #fff;
+  
+      /* Add styles for smaller screens here */
+    }
+  
+    /* Add styles for larger screens here */
+  
+    .custom-link-button {
+      background-color: #ff0000; /* Maroon background color */
+      color: #fff; /* White text color */
       padding: 10px 20px;
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
       transition: background-color 0.3s ease;
-      box-shadow: 0 0 20px #ff0000;
-      }
-
-      .custom-link-button:hover {
-        background-color: #ffffff;
-        color: #ff0000;
-        box-shadow: 0 0 30px #ff0000;
-      }
-
+      box-shadow: 0 0 20px #ff0606;
     }
-
-    .steps {
-      background-color: #02020200;
-      padding: 20px;
-      border-radius: 10px;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
+  
+    .custom-link-button:hover {
+      background-color: #fff; /* White background color on hover */
+      color: #ff0000; /* Maroon text color on hover */
+      box-shadow: 0 0 30px #ff0000;
+    }
+  
+    /* CSS for the logo and text alignment */
+    .logo-container {
+      display: flex; /* Use flexbox for alignment */
+      align-items: center; /* Center vertically */
+    }
+  
+    .logo {
+      width: 50px; /* Adjust the width to your preferred size */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 10px; /* Add some spacing between the logo and text */
     }
 
     .step {
-      margin-bottom: 20px;
-      padding: 15px;
-      background-color: #181818;
-      border: 1px solid #6a027c;
-      border-radius: 5px;
-      transition: transform 0.2s ease;
-    }
-
-    .step:hover {
-      transform: scale(1.05);
-
-      background-color: #211324;
-
-      box-shadow: 0 0 30px #69057b;
-    }
-
-
-
-    .step-description {
-      margin-top: 5px;
-    }
-
-
-    @media (max-width: 768px) {
-  /* Styles for screens with a maximum width of 768px */
-  .container {
-    padding: 10px;
-  }
-
-  .button {
-    font-size: 14px;
-  }
-
-  .problem-statement {
-    padding: 10px;
-  }
-
-  .custom-link-button {
-    padding: 8px 16px;
-    /* Add styles for smaller screens here */
-    background-color: #ff0000;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 0 20px #ff0000;
-  }
-
-  .custom-link-button:hover {
-    background-color: #ffffff;
-    color: #ff0000;
-    box-shadow: 0 0 30px #ff0000;
-  }
-}
-
-/* Add styles for larger screens here */
-.custom-link-button {
-  background-color: #ff0000;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 15px;
+  color: #000;
+  background-color: #fff; /* White background color */
+  border: 2px solid #800000; /* Maroon border */
   border-radius: 5px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 0 20px #ff0000;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease; /* Add transitions */
+opacity: 0.8;
 }
 
-.custom-link-button:hover {
-  background-color: #ffffff;
-  color: #ff0000;
-  box-shadow: 0 0 30px #ff0000;
-}
-/* CSS for the logo and text alignment */
-.logo-container {
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Center vertically */
+.step:hover {
+  transform: scale(1.05);
+  background-color: #fff; /* White background color on hover */
+  box-shadow: 0 0 30px #800000; /* Maroon box shadow on hover */
+  color: #800000; /* Maroon text color on hover */
 }
 
-.logo {
-  width: 50px; /* Adjust the width to your preferred size */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Add some spacing between the logo and text */
+.step-description {
+  margin-top: 5px;
+  color: #800000;
 }
+
+.container-header {
+
+background-color: #fff942;
+
+
+}
+
+.subtext-next{
+
+color: #fff823;
+box-shadow: #800000;
+background-color: #8b1414;
+border-radius: 6px;
+
+
+}
+
+#title-statement {
+
+  color: #800000;
+
+}
+
+
 
   </style>
+  
 </head>
 
 <body>
   <header>
-    <div class="container">
+    <div class="container-header">
       <img src="https://drive.google.com/uc?id=1YceOs23FLop1Mh62SlmcL5nKBzAhLhK8" alt="MUIT Hackathon Logo" class="logo" width="100" height="100">
       <h1 class="neon-text">MUIT Hackathon 2k23</h1>
       <div class="header-info">
-        <p>Hosted by MUIT Lucknow</p>
+        <p style="color: #cc2c2c;">Hosted by MUIT Lucknow</p>
         <p class="subtext">Exploring the Future of Technology</p>
       </div>
       <ul>
@@ -445,10 +424,10 @@ ul li a#about-link:before {
 
   <div class="container">
     <div class="content">
-      <h2>Hackathon!</h2>
-      <p>Join us in a journey to explore cutting-edge technology.</p>
+      <h2 style="color: #800000;">Hackathon!</h2>
+      <p class="subtext-next">Join us in a journey to explore cutting-edge technology.</p>
 
-      <h3>Registration Instructions:</h3>
+      <h3 style="color: #600000;">Registration Instructions:</h3>
       <div class="steps">
         <div class="step">
           <p class="step-description">1.Select a problem statement from the list below.</p>
@@ -482,7 +461,7 @@ ul li a#about-link:before {
       </div>
 
 
-      <h3>List of Problem Statements:</h3>
+      <h3 id="title-statement">List of Problem Statements:</h3>
       <ul>
         <li class="problem-statement">
           <strong>Problem Statement 1: Smarter Surveillance System</strong>
@@ -497,7 +476,8 @@ ul li a#about-link:before {
             <p><strong>Expectation:</strong> Develop a Technology that can address this issue partially or
               completely. The users of this system are two-fold: Any Security agency who is securing a larger
               area can install an unmanned area and can track through a single control room.</p>
-        </li>
+       <div class="expand-indicator">▼</div>
+            </li>
 
         <li class="problem-statement">
           <strong>Problem Statement 2: Drone Technology</strong>
