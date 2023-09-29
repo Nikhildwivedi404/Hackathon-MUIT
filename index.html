@@ -8,59 +8,97 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <style>
     body {
-      background-color: #fff; /* White background color */
-      color: #000; /* Black text color */
+      background-color: #fff;
+      /* White background color */
+      color: #000;
+      /* Black text color */
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
+
+      background-image: url('https://drive.google.com/uc?id=1v0rbz04WLCxxC9FzyLsBp_HW5ivS0FqR');
+   
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
     }
-  
+
+
+
     header {
-      background-color: #800000; /* Maroon background color */
-      color: #fff; /* White text color */
+      background-color: #800000;
+      /* Maroon background color */
+      color: #fff;
+      /* White text color */
       padding: 20px 0;
       text-align: center;
     }
-  
+
     header h1 {
       margin: 0;
       font-size: 36px;
       font-weight: bold;
       letter-spacing: 3px;
     }
-  
+
     header p {
       font-size: 18px;
       margin-top: 10px;
     }
-  
+
     header p.subtext {
-      font-size: 16px;
-      color: #f20404;
-    }
-  
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  background: radial-gradient(circle, #cc2fd4, #000000); /* Gradient from orange to red */
+border-radius: 10px;
+}
+
+/* Text shadow for added depth and beauty */
+header p.subtext::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  z-index: -1;
+  border-radius: 10px; /* Match the border-radius above */
+}
+
+
+
+
     header ul {
       list-style-type: none;
       padding: 0;
     }
-  
+
     header ul li {
       display: inline;
       margin-right: 20px;
     }
-  
+
     header ul li:last-child {
       margin-right: 0;
     }
-  
+
     header ul li a {
       color: #19f845;
       text-decoration: none;
       background-color: rgb(183, 0, 219);
       transition: background-color 0.3s ease;
-      
+
     }
-  
+
     header ul li a:hover {
       text-decoration: underline;
       background-color: #36f85d;
@@ -68,81 +106,102 @@
       box-shadow: 0 0 30px #19f845;
 
     }
-  
+
     .container {
-      max-width: 960px;
+      max-width: 100%;
       margin: 0 auto;
-      background-color: #fff; /* White background color */
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      /* Arrange children in a column */
+      align-items: center;
+      justify-content: center;
+      opacity: 0.88;
+      background-color: #ffea9e;
+
+
+
+
     }
-  
+
     .content {
       text-align: center;
       margin-top: 50px;
     }
-  
+
     /* Header Styles */
     header {
-      background-color: #800000; /* Maroon background color */
-      color: #fff; /* White text color */
+      background-color: #800000;
+      /* Maroon background color */
+      color: #fff;
+      /* White text color */
       padding: 10px 0;
       text-align: center;
-      transition: background-color 0.3s ease; /* Smooth background color transition */
+      transition: background-color 0.3s ease;
+      /* Smooth background color transition */
     }
-  
+
     header:hover {
-      background-color: #600000; /* Darker maroon background color on hover */
+      background-color: #600000;
+      /* Darker maroon background color on hover */
     }
-  
+
     .container {
-      display: flex;
-      flex-direction: column; /* Arrange children in a column */
-      align-items: center;
-      justify-content: center;
-      max-width: 960px;
+
+      max-width: 100%;
       margin: 0 auto;
       padding: 20px;
-      background-color: #ffea9e;
+      display: flex;
+      flex-direction: column;
+      /* Arrange children in a column */
+      align-items: center;
+      justify-content: center;
+      opacity: 0.88;
+      background-color: #fff5cf;
+
     }
-  
+
     .logo {
       width: 100px;
       height: 100px;
       margin-right: 20px;
-      border-radius: 50%; /* Make the logo circular */
-      transition: transform 0.3s ease; /* Add a subtle scaling effect on hover */
+      border-radius: 50%;
+      /* Make the logo circular */
+      transition: transform 0.3s ease;
+      /* Add a subtle scaling effect on hover */
     }
-  
+
     .logo:hover {
-      transform: scale(1.05); /* Slightly scale up the logo on hover */
+      transform: scale(1.05);
+      /* Slightly scale up the logo on hover */
     }
-  
-    .neon-text {
-      font-size: 36px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700; /* Neon text effect */
-      animation: neon-animation 1.5s linear infinite alternate;
-    }
-  
+
+
+
     .header-info {
       text-align: center;
     }
-  
+
     /* Neon Glow Effect for Links */
     ul li a {
       display: inline-block;
       position: relative;
-      background-color: transparent; /* Transparent background */
-      color: #FFD700; /* Yellow text color */
-      padding: 10px 20px; /* Padding adjustments */
+      background-color: transparent;
+      /* Transparent background */
+      color: #FFD700;
+      /* Yellow text color */
+      padding: 10px 20px;
+      /* Padding adjustments */
       text-decoration: none;
       font-weight: bold;
-      border-radius: 30px; /* Rounded corners */
-      transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; /* Smooth transitions */
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+      border-radius: 30px;
+      /* Rounded corners */
+      transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+      /* Smooth transitions */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      /* Subtle shadow */
     }
-  
+
     ul li a:before {
       content: "";
       position: absolute;
@@ -150,53 +209,58 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(45deg, #FFD700, #800000); /* Neon-style gradient */
-      border-radius: 30px; /* Match button's border-radius */
+      background: linear-gradient(45deg, #FFD700, #800000);
+      /* Neon-style gradient */
+      border-radius: 30px;
+      /* Match button's border-radius */
       z-index: -1;
       transition: opacity 0.3s ease;
-      opacity: 0; /* Initially hidden */
+      opacity: 0;
+      /* Initially hidden */
     }
-  
+
     ul li a:hover:before {
-      opacity: 1; /* Show the neon glow on hover */
+      opacity: 1;
+      /* Show the neon glow on hover */
     }
-  
-    /* Styling for "About" Section Link */
-    ul li a#about-link {
-      color: #800000; /* Maroon text color */
-      text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700; /* Neon text effect */
-    }
-  
-    ul li a#about-link:before {
-      background: linear-gradient(45deg, #FFD700, #800000); /* Neon-style gradient for "About" link */
-    }
-  
+
+
+
     /* Highlighting for "About" Section */
     #about-section {
-      background-color: #FFD700; /* Yellow highlight background color */
-      color: #800000; /* Maroon highlight text color */
-      padding: 6px; /* Highlight padding */
-      border-radius: 10px; /* Rounded corners for the highlight */
-      margin: 20px 0; /* Add margin to separate from other content */
+      background-color: #FFD700;
+      /* Yellow highlight background color */
+      color: #800000;
+      /* Maroon highlight text color */
+      padding: 6px;
+      /* Highlight padding */
+      border-radius: 10px;
+      /* Rounded corners for the highlight */
+      margin: 20px 0;
+      /* Add margin to separate from other content */
       transition: background-color 0.3s ease;
       box-shadow: 0 0 20px rgba(128, 0, 0, 0.5);
     }
-  
+
     /* Reset Link Styles for "About" Section */
     #about-section a {
-      color: #000; /* Reset link color to match highlight text color */
+      color: #000;
+      /* Reset link color to match highlight text color */
       box-shadow: 0 0 30px #ecff19
     }
-  
+
     #about-section a:hover {
-      text-decoration: underline; /* Add underline effect on hover */
+      text-decoration: underline;
+      /* Add underline effect on hover */
       box-shadow: 0 0 30px #ecff19
     }
-  
+
     .button {
       display: inline-block;
-      background-color: #FFD700; /* Yellow background color */
-      color: #fff; /* White text color */
+      background-color: #FFD700;
+      /* Yellow background color */
+      color: #fff;
+      /* White text color */
       padding: 10px 20px;
       text-decoration: none;
       font-weight: bold;
@@ -204,129 +268,164 @@
       transition: background-color 0.3s ease;
       box-shadow: 0 0 20px rgba(255, 237, 35, 0.945);
     }
-  
+
     .button:hover {
-      background-color: #ffffff; /* Darker maroon background color on hover */
-      color: #800000; /* White text color */
+      background-color: #ffffff;
+      /* Darker maroon background color on hover */
+      color: #800000;
+      /* White text color */
       box-shadow: 0 0 30px #800000;
     }
-  
+
     h2 {
       font-size: 24px;
       color: #fff;
     }
-  
+
     h3 {
       font-size: 20px;
       color: #fff;
     }
-  
+
     p {
       font-size: 16px;
-      color: #ffe0de;
+      color: yellow;
       margin: 10px 0;
     }
-  
+
     ol,
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
     }
-  
+
     li {
       margin-bottom: 10px;
     }
+
+   /* Styles for the problem statement */
+.problem-statement {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 4px solid #FFD700; /* Yellow border */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the problem statement when hovered */
+.problem-statement:hover {
+  background-color: #ffcc3f; /* Maroon background color on hover */
+  box-shadow: 0 0 20px #ffdd34; /* Yellow box shadow on hover */
+  border: 4px solid #b11111;
+  transform: scale(1.03);
   
-    .problem-statement {
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      border: 2px solid #FFD700; /* Yellow border */
-      border-radius: 5px;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-  
-    .problem-statement.expanded {
-  background-color: #800000; /* Updated background color (Maroon) */
+}
+
+/* Styles for the problem statement in expanded state */
+.problem-statement.expanded {
+  background-color: #800000; /* Maroon background color */
   color: #fff; /* Text color */
   border: 2px solid #fff; /* White border */
   border-radius: 5px;
-  padding: 15px; /* Increased padding for better readability */
+  padding: 15px;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(128, 0, 0, 0.5); /* Maroon box shadow */
 }
 
+/* Styles for the hidden problem description */
+.problem-description {
+  display: none;
+  margin-top: 10px;
+  color: #fff; /* Text color */
+}
+
+/* Styles for the problem description when problem statement is active */
+.problem-statement.active .problem-description {
+  display: block;
   
-    .problem-description {
-      display: none;
-      margin-top: 10px;
-      color: #fff;
-    }
+}
+
+/* Downward-pointing arrow symbol when hovering over the problem statement */
+.problem-statement:hover::after {
+  content: "\2193"; /* Unicode character for a downward-pointing triangle */
+  display: inline-block;
+  margin-left: 5px; /* Adjust the margin as needed */
+  font-weight: bolder;
   
-    .problem-statement.active .problem-description {
-      display: block;
-    }
-  
+}
+
+
     /* Neon styles */
     .neon-text {
-      font-size: 24px;
-      color: #a01e1e; /* White text color */
-      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff; /* Yellow neon glow */
+      font-size: 28px;
+      color: #a01e1e;
+      /* White text color */
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+      /* Yellow neon glow */
       animation: neon-animation 1.5s linear infinite alternate;
+      background-color: antiquewhite;
+
+      padding: 10px;
     }
-  
+
     @keyframes neon-animation {
       0% {
-        text-shadow: 0 0 2px #ffffff, 0 0 6px #ffffff, 0 0 10px #ffffff; /* Yellow neon glow */
+        text-shadow: 0 0 2px #ffffff, 0 0 6px #ffffff, 0 0 10px #ffffff;
+        /* Yellow neon glow */
       }
-  
+
       100% {
-        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; /* Yellow neon glow */
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+        /* Yellow neon glow */
       }
     }
-  
+
     /* Arrow styles */
     .arrow {
       font-size: 36px;
-      color: #2cff56; /* White text color */
+      color: #2cff56;
+      /* White text color */
       transform: rotate(0deg);
       text-shadow: 0 0 10px #2cff56;
-      
+
     }
-  
+
     @keyframes neon-arrow-animation {
       0% {
         text-shadow: 0 0 10px #2cff56, 0 0 10px #2cff56, 0 0 20px #2cff56;
       }
-  
+
       100% {
         text-shadow: 0 0 20px #2cff56, 0 0 20px #2cff56, 0 0 30px #2cff56;
       }
     }
-  
+
     /* Media Queries for Responsiveness */
     @media (max-width: 768px) {
       .container {
         padding: 10px;
       }
-  
+
       .button {
         font-size: 14px;
       }
-  
+
       .problem-statement {
         padding: 10px;
       }
-  
-      /* Add styles for smaller screens here */
+
+
     }
-  
-    /* Add styles for larger screens here */
-  
+
+
+
     .custom-link-button {
-      background-color: #ff0000; /* Maroon background color */
-      color: #fff; /* White text color */
+      background-color: #ff0000;
+      /* Maroon background color */
+      color: #fff;
+      /* White text color */
       padding: 10px 20px;
       text-decoration: none;
       font-weight: bold;
@@ -334,93 +433,160 @@
       transition: background-color 0.3s ease;
       box-shadow: 0 0 20px #ff0606;
     }
-  
+
     .custom-link-button:hover {
-      background-color: #fff; /* White background color on hover */
-      color: #ff0000; /* Maroon text color on hover */
+      background-color: #fff;
+      /* White background color on hover */
+      color: #ff0000;
+      /* Maroon text color on hover */
       box-shadow: 0 0 30px #ff0000;
     }
-  
+
     /* CSS for the logo and text alignment */
     .logo-container {
-      display: flex; /* Use flexbox for alignment */
-      align-items: center; /* Center vertically */
+      display: flex;
+      /* Use flexbox for alignment */
+      align-items: center;
+      /* Center vertically */
     }
-  
+
     .logo {
-      width: 50px; /* Adjust the width to your preferred size */
-      height: auto; /* Maintain aspect ratio */
-      margin-right: 10px; /* Add some spacing between the logo and text */
+      width: 50px;
+      /* Adjust the width to your preferred size */
+      height: auto;
+      /* Maintain aspect ratio */
+      margin-right: 10px;
+      /* Add some spacing between the logo and text */
     }
 
     .step {
-  margin-bottom: 20px;
-  padding: 15px;
-  color: #000;
-  background-color: #fff; /* White background color */
-  border: 2px solid #800000; /* Maroon border */
-  border-radius: 5px;
-  transition: transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease; /* Add transitions */
-opacity: 0.8;
-}
+      margin-bottom: 20px;
+      padding: 15px;
+      color: #000;
+      background-color: #fff;
+      /* White background color */
+      border: 2px solid #800000;
+      /* Maroon border */
+      border-radius: 5px;
+      transition: transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+      /* Add transitions */
+      opacity: 1;
+    }
 
-.step:hover {
-  transform: scale(1.05);
-  background-color: #fff; /* White background color on hover */
-  box-shadow: 0 0 30px #800000; /* Maroon box shadow on hover */
-  color: #800000; /* Maroon text color on hover */
-}
+    .step:hover {
+      transform: scale(1.05);
+      background-color: #fff;
+      /* White background color on hover */
+      box-shadow: 0 0 30px #800000;
+      /* Maroon box shadow on hover */
+      color: #800000;
+      /* Maroon text color on hover */
 
-.step-description {
-  margin-top: 5px;
-  color: #800000;
-}
+    }
 
-.container-header {
+    .step-description {
+      margin-top: 5px;
+      color: #800000;
 
-background-color: #fff942;
+    }
 
+    .container-header {
 
-}
-
-.subtext-next{
-
-color: #fff823;
-box-shadow: #800000;
-background-color: #8b1414;
-border-radius: 6px;
-
-
-}
-
-#title-statement {
-
-  color: #800000;
-
-}
+      background-color: #fff942;
+      opacity: 0.9;
+       background-image: url('https://drive.google.com/uc?id=1F215kw8sdib52IqigweJs2GCtDJWfFAP');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
 
 
+    }
 
+    .subtext-next {
+
+      color: #fff823;
+      box-shadow: #800000;
+      font-size: 20px;
+      background-color: #8b1414;
+      border-radius: 6px;
+      padding: 6px;
+    
+
+
+    }
+
+    #title-statement {
+
+      color: #800000;
+
+    }
+
+
+    /* Keyframes for neon blinking and flashing effect */
+    @keyframes neonBlink {
+      0% {
+        text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+      }
+
+      25% {
+        text-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
+      }
+
+      50% {
+        text-shadow: 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow;
+      }
+
+      75% {
+        text-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
+      }
+
+      100% {
+        text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+      }
+    }
+
+    /* Apply the neon blinking and flashing animation */
+    .hosted-by {
+   
+      background-color: hsl(351, 85%, 29%);
+      animation: neonBlink 1s linear infinite;
+      font-size: 22px;
+      padding: 10px 30px;
+      font-weight: bolder;
+
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+   
+
+
+
+
+    }
   </style>
-  
+
 </head>
 
 <body>
   <header>
     <div class="container-header">
-      <img src="https://drive.google.com/uc?id=1YceOs23FLop1Mh62SlmcL5nKBzAhLhK8" alt="MUIT Hackathon Logo" class="logo" width="100" height="100">
-      <h1 class="neon-text">MUIT Hackathon 2k23</h1>
-      <div class="header-info">
-        <p style="color: #cc2c2c;">Hosted by MUIT Lucknow</p>
-        <p class="subtext">Exploring the Future of Technology</p>
-      </div>
+      <nav>
+        <img src="https://drive.google.com/uc?id=1YceOs23FLop1Mh62SlmcL5nKBzAhLhK8" alt="MUIT Hackathon Logo"
+          class="logo" width="100" height="100">
+        <h1 class="neon-text">MUIT HACKATHON 2k23</h1>
+        <div class="header-info">
+          <p class="hosted-by">Hosted by MUIT Lucknow</p>
+          <p class="subtext">Exploring the Future of Technology</p>
+        </div>
+      </nav>
       <ul>
         <li><a href="#about" id="about-section">About</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd79AOy8gu9URCsd5h1k6K4TknLa-TVWIh_bu5zMFyNCTGGug/viewform?usp=sf_link" target="_blank">Registration</a></li>
+        <li><a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd79AOy8gu9URCsd5h1k6K4TknLa-TVWIh_bu5zMFyNCTGGug/viewform?usp=sf_link"
+            target="_blank">Registration</a></li>
       </ul>
     </div>
   </header>
-  
+
+
 
   <div class="container">
     <div class="content">
@@ -476,8 +642,8 @@ border-radius: 6px;
             <p><strong>Expectation:</strong> Develop a Technology that can address this issue partially or
               completely. The users of this system are two-fold: Any Security agency who is securing a larger
               area can install an unmanned area and can track through a single control room.</p>
-       <div class="expand-indicator">▼</div>
-            </li>
+            <div class="expand-indicator">▼</div>
+        </li>
 
         <li class="problem-statement">
           <strong>Problem Statement 2: Drone Technology</strong>
@@ -635,25 +801,25 @@ border-radius: 6px;
     });
 
 
-      // Function to handle window resize
-      function handleResize() {
-            const windowWidth = window.innerWidth;
+    // Function to handle window resize
+    function handleResize() {
+      const windowWidth = window.innerWidth;
 
-            // Example: Change background color based on screen width
-            if (windowWidth < 768) {
-                document.body.style.backgroundColor = "#333";
-            } else {
-                document.body.style.backgroundColor = "#111";
-            }
+      // Example: Change background color based on screen width
+      if (windowWidth < 768) {
+        document.body.style.backgroundColor = "#333";
+      } else {
+        document.body.style.backgroundColor = "#111";
+      }
 
-            // You can add more dynamic adjustments here as needed
-        }
+      // You can add more dynamic adjustments here as needed
+    }
 
-        // Attach the resize event listener
-        window.addEventListener("resize", handleResize);
+    // Attach the resize event listener
+    window.addEventListener("resize", handleResize);
 
-        // Initial call to handleResize to set initial styles
-        handleResize();
+    // Initial call to handleResize to set initial styles
+    handleResize();
   </script>
 
 
